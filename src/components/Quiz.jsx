@@ -110,7 +110,7 @@ const Quiz = () => {
                                 />
                                 <div className="d-flex justify-content-center">
                                     <button
-                                        className={"btn mt-2"}
+                                        className={"btn mt-2 w-75 mt-3 mb-3"}
                                         onClick={checkAnswer}
                                         disabled={isAnswered || timeUp} // Disable submit button when time is up or already answered
                                     >
@@ -129,15 +129,15 @@ const Quiz = () => {
                             {/* Enable Next button after answer is submitted */}
                             <div className="d-flex justify-content-center">
                                 <button
-                                    className={"btn mt-3"}
+                                    className={"btn mt-3 w-75 mb-3"}
                                     onClick={handleNext}
                                     disabled={!isAnswered || timeUp} // Enable next button only after answering and if time is not up
                                 >
                                     Next
                                 </button>
                             </div>
-                            <div className={"index mt-5 fw-bold ms-5 d-flex"}>
-                                {index + 1} of {data.length} questions <h5 className={"ms-5"}>🕛:{Math.floor(countdown / 60)}:{countdown % 60}</h5>
+                            <div className={"index mt-5 fw-bold d-flex justify-content-between gap-5"}>
+                                {index + 1} of {data.length} questions <h5 className={""}>🕛:{Math.floor(countdown / 60)}:{countdown % 60}</h5>
                             </div>
                         </>
                     )}
