@@ -137,7 +137,7 @@ const Quiz = () => {
                                 </button>
                             </div>
                             <div className={"index mt-5 fw-bold d-flex justify-content-between gap-5"}>
-                                {index + 1} of {data.length} questions <h5 className={""}>🕛:{Math.floor(countdown / 60)}:{countdown % 60}</h5>
+                                {index + 1} of {data.length} quizzes <h5 className={""}>🕛:{Math.floor(countdown / 60)}:{countdown % 60}</h5>
                             </div>
                         </>
                     )}
